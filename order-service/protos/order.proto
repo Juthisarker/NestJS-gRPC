@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package order;
+
+// The OrderService definition.
+service OrderService {
+  // Places an order.
+  rpc PlaceOrder(PlaceOrderRequest) returns (PlaceOrderResponse);
+}
+
+// The request message containing the product ID and quantity.
+message PlaceOrderRequest {
+int32 productId = 1;
+  int32 quantity = 2;
+}
+
+// The response message containing the status of the order.
+message PlaceOrderResponse {
+  string status = 1;
+}

@@ -1,0 +1,47 @@
+syntax = "proto3";
+
+package product;
+
+service ProductService{
+    //checks stock availability of a product.
+    rpc CheckStock(CheckStockRequest) returns (CheckStockResponse);
+
+    //retrives product details by its id
+    rpc GetProduct(GetProductRequest) returns (GetProductResponse);
+
+    rpc CreateProduct (CreateProductRequest) returns (Product);
+}
+// the request mssage containing the product id for checking stock
+message CheckStockRequest {
+    int32 id = 1;
+}
+
+//the response message containing the stock availability
+message CheckStockResponse {
+    bool available = 1;
+}
+
+//the request message containing the product id for getting product detail
+message GetProductRequest {
+    int32  id = 1;
+  }
+
+  // The response message containing the product details.
+message GetProductResponse {
+    Product product = 1;
+  }
+
+message Product {
+    int32 id = 1;
+    string name = 2;
+    float price = 3;
+    bool available = 4;
+  }
+
+message CreateProductRequest {
+    string name = 1;
+    float price = 2;
+    bool available = 3;
+  }
+
+

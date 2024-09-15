@@ -1,0 +1,57 @@
+# Node.js specific
+# Ignore node_modules in all service directories
+order-service/node_modules/
+product-service/node_modules/
+
+# General Node.js ignores
+npm-debug.log
+yarn-error.log
+.pnp/
+.pnp.js
+
+# TypeScript specific
+# Ignore dist directories in all service directories
+order-service/dist/
+product-service/dist/
+build/
+*.tsbuildinfo
+
+# Environment files
+.env
+.env.*.local
+*.local
+
+# Logs
+*.log
+
+# Dependency directories
+jspm_packages/
+coverage/
+
+# Docker specific
+docker-compose.override.yml
+docker-compose*.yml
+
+# IDE/editor specific
+.vscode/
+.idea/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# OS specific
+.DS_Store
+Thumbs.db
+
+# Mac
+*.swp
+*.swo
+
+# Windows
+*.bat
+*.cmd
+*.ps1
+
+# JetBrains
+*.iml
