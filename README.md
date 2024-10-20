@@ -1,4 +1,4 @@
-NestJS gRPC Microservices - Product and Order Services
+NestJS gRPC Microservices
 This repository is created as a learning project for understanding how to implement gRPC in a NestJS framework. It consists of two microservices:
 
 Product Service
