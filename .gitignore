@@ -29,8 +29,8 @@ jspm_packages/
 coverage/
 
 # Docker specific
-docker-compose.override.yml
-docker-compose*.yml
+# docker-compose.override.yml
+# docker-compose*.yml
 
 # IDE/editor specific
 .vscode/
